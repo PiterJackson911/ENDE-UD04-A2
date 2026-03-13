@@ -1,7 +1,8 @@
 package figuras;
 
 import java.awt.Color;
-
+//COMENATIROOROJDW3
+//COMEARA
 public abstract class Figura {
     private Punto centro;
     private Color color;
