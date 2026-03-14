@@ -1,4 +1,4 @@
-package figuras;
+package com.mycompany.figuras;
 public class Punto {
 private double x;
 private double y;
