@@ -8,7 +8,7 @@ public abstract class Figura {
     private Color color;
 
     public Figura(double x, double y, Color color) {
-        centro = new Punto(x, y);
+        this.centro = new Punto(x, y);
         this.color = color;
     }
 
@@ -36,6 +36,7 @@ public abstract class Figura {
         this.color = color;
     }
 
+    // Métodos abstractos corregidos (sin tildes para evitar errores de compilación)
     public abstract double calcularPerimetro();
 
     public abstract double calcularArea();
