@@ -39,12 +39,12 @@ public class Triángulo extends Figura {
         this.lado3 = lado3;
     }
 
-    public double perímetro() {
+    public double calcularPerimetro() {
         return lado1 + lado2 + lado3;
     }
 
-    public double área() {
-        double sp = perímetro() / 2;
+    public double calcularArea() {
+        double sp = calcularPerimetro() / 2;
         return Math.sqrt(sp * (sp - lado1) * (sp - lado2) * (sp - lado3));
     }
 }

@@ -29,11 +29,11 @@ public class Rectángulo extends Figura {
         this.altura = altura;
     }
 
-    public double perímetro() {
+    public double calcularPerimetro() {
         return 2 * base + 2 * altura;
     }
 
-    public double área() {
+    public double calcularArea() {
         return base * altura;
     }
 }

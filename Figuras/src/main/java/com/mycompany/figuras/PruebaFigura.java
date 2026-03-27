@@ -21,8 +21,8 @@ double lado2 = teclado.nextDouble();
 System.out.print ("Introduzca el lado 3 del triángulo: ");
 double lado3 = teclado.nextDouble();
 Triángulo t = new Triángulo(x, y, Color.red, lado1, lado2, lado3);
-System.out.println ("El perímetro es " + t.perímetro());
-System.out.println ("El área es " + t.área());
+System.out.println ("El perímetro es " + t.calcularPerimetro());
+System.out.println ("El área es " + t.calcularArea());
 break;
 case 2:
 System.out.print ("Introduzca la base del rectángulo: ");
@@ -30,15 +30,15 @@ double base = teclado.nextDouble();
 System.out.print ("Introduzca la altura del rectángulo: ");
 double altura = teclado.nextDouble();
 Rectángulo r = new Rectángulo(x, y, Color.red, base, altura);
-                        System.out.println("El perímetro es " + r.perímetro());
-                        System.out.println("El área es " + r.área());
+                        System.out.println("El perímetro es " + r.calcularPerimetro());
+                        System.out.println("El área es " + r.calcularArea());
                         break;
                     case 3:
                         System.out.print("Introduzca el lado del cuadrado: ");
                         double lado = teclado.nextDouble();
                         Cuadrado c = new Cuadrado(x, y, Color.red, lado);
-                        System.out.println("El perímetro es " + c.perímetro());
-                        System.out.println("El área es " + c.área());
+                        System.out.println("El perímetro es " + c.calcularPerimetro());
+                        System.out.println("El área es " + c.calcularArea());
                         break;
                 }
             }

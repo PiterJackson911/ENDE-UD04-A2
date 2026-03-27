@@ -8,7 +8,7 @@ public abstract class Figura {
     private Color color;
 
     public Figura(double x, double y, Color color) {
-        centro = new Punto(x, y);
+        this.centro = new Punto(x, y);
         this.color = color;
     }
 
@@ -36,15 +36,16 @@ public abstract class Figura {
         this.color = color;
     }
 
-    public abstract double perímetro();
+    // Métodos abstractos corregidos (sin tildes para evitar errores de compilación)
+    public abstract double calcularPerimetro();
 
-    public abstract double área();
+    public abstract double calcularArea();
 
     public int esMayorQue(Figura otraFigura) {
         int codigo;
-        if (this.área() > otraFigura.área()) {
+        if (this.calcularArea() > otraFigura.calcularArea()) {
             codigo = 1;
-        } else if (this.área() < otraFigura.área()) {
+        } else if (this.calcularArea() < otraFigura.calcularArea()) {
             codigo = -1;
         } else {
             codigo = 0;

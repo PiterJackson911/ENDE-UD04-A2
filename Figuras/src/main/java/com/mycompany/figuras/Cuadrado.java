@@ -8,3 +8,4 @@ public class Cuadrado extends Rectángulo {
         super(x, y, color, lado, lado);
     }
 }
+//Cambio
